@@ -12,4 +12,4 @@ app.get("/movies", (req, res)=> {
     // res.send(movies);
 })
 
-app.listen(3000, ()=> console.log("Server running on 3000 PORT"))
+app.listen(3000, ()=> console.log("Server running on 3000 PORT"));

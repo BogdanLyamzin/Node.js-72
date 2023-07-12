@@ -13,7 +13,7 @@ moviesRouter.get("/:id", (req, res)=> {
 })
 
 moviesRouter.post("/", (req, res)=> {
-    res.json(movies[0]);
+    res.json(movies[0])
 })
 
 export default moviesRouter;

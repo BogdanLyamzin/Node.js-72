@@ -6,18 +6,17 @@ import cors from "cors";
 import movies from "./movies.js";
 
 const app = express();
-
+app.use(cors());
 // const corsMiddleware = cors();
 /*
 const cors = ()=> {
     return (req, res, next)=> {
-        // headers manipulate
-        next();
+        // headers change
+        next()
     }
 }
 */
 // app.use(corsMiddleware);
-app.use(cors())
 
 // app.use(async(req, res, next)=> {
 //     const {method, url} = req;
@@ -51,4 +50,3 @@ app.use((req, res)=> {
 })
 
 app.listen(3000, ()=> console.log("Server running on 3000 PORT"));
-
