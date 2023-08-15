@@ -1,0 +1,16 @@
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin tablet {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1140px) {
+        @content;
+    }
+}
